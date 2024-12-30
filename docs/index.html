@@ -18,7 +18,7 @@
 	            padding: 20px;
 	            background-color: #fff;
 	            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	            position: relative; /* Contains the floated image inside this area */
+	            position: relative;
 	        }
 	        .profile-pic {
 	            width: 100px; /* Set the size of the picture */
@@ -27,6 +27,10 @@
 	            margin: 0 0 10px 10px; /* Adjust spacing around the image */
 	            border-radius: 50%; /* Optional: make the image circular */
 	            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: add shadow for aesthetics */
+	            transition: transform 0.6s ease; /* Smooth animation for rotation */
+	        }
+	        .profile-pic:hover {
+	            transform: rotate(360deg); /* Rotate the image 360 degrees on hover */
 	        }
 	</style>
 </head>
