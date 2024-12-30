@@ -15,16 +15,16 @@
 	        .container {
 	            width: 100%;
 	            max-width: 800px;
-	            padding: 20px; /* Optional: add some padding inside the container */
-	            background-color: #fff; /* Optional: background color for the content area */
-	            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for aesthetics */
+	            padding: 20px;
+	            background-color: #fff;
+	            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	            position: relative; /* Contains the floated image inside this area */
 	        }
 	        .profile-pic {
 	            width: 200px; /* Set the size of the picture */
 	            height: auto; /* Maintain aspect ratio */
-	            position: absolute;
-	            top: 20px; /* Distance from the top of the container */
-	            right: 20px; /* Distance from the right of the container */
+	            float: right; /* Float the image to the top-right of the content */
+	            margin: 0 0 10px 10px; /* Adjust spacing around the image */
 	            border-radius: 50%; /* Optional: make the image circular */
 	            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: add shadow for aesthetics */
 	        }
