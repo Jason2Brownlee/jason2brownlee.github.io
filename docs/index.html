@@ -8,7 +8,7 @@
 	        body {
 	            margin: 0;
 	            padding: 0;
-	            background-color: #f4f4f4; /* Optional: background color for the page */
+	            background-color: #fafafa; /* Optional: background color for the page */
 	            display: flex;
 	            justify-content: center;
 	        }
@@ -31,6 +31,9 @@
 	        }
 	        .profile-pic:hover {
 	            transform: rotate(360deg); /* Rotate the image 360 degrees on hover */
+	        }
+	        h1 {
+	        	color: #007BFF;
 	        }
 	</style>
 </head>
@@ -171,6 +174,19 @@ Projects that had some online impact:
 	<li><a href="https://github.com/Jason2Brownlee/HumanDebrisArchive">Human Debris</a> (archived) Quake maps, mods, tutorials, programs (circa 1999-2001)</li>
 </ul>
 
+<br ><br >
+<div id="last-updated"></div>
 </div>
+<script>
+  // Get the last modified date of the document
+  const lastModified = new Date(document.lastModified);
+
+  // Format the date as desired (e.g., 'January 1, 2025, 10:00 AM')
+  const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+  const formattedDate = lastModified.toLocaleDateString(undefined, options);
+
+  // Display the last updated date in the designated div
+  document.getElementById('last-updated').textContent = `Last Updated: ${formattedDate}`;
+</script>
 </body>
 </html>
